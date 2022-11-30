@@ -5,17 +5,20 @@ body {
 
 h2 {
   color: white;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3vw;
-  line-height:150%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3em;
+  line-height: 150%;
   text-decoration: underline;
 }
 
 h3 {
   color: white;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2vw;
-  line-height:150%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5em;
+  line-height: 150%;
+  width: fit-content;
+  margin: 0 auto;
+  transition: 0.3s all;
 }
 
 .project-container {
@@ -25,12 +28,52 @@ h3 {
 }
 
 .project {
-  width: 50%;
   margin: 0 auto;
   border-radius: 50px;
-  border: 6px solid rgba(0, 0, 0, 0);
+  border: 10px solid rgba(0, 0, 0, 0);
 }
 
-.project:hover {
-  border: 6px solid rgba(0, 0, 0, 1);
+.project-node {
+  margin-left: 4%;
+  margin-right: 4%;
+  width: fit-content;
+}
+
+.project-node:hover h3 {
+  color: black;
+}
+
+.project-node:hover .project {
+  border: 10px solid black;
+}
+
+.project-node img {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: 0.3s all;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.github {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.github:hover {
+  background-color: rgb(30, 30, 30);
+  border: 2px solid rgb(30, 30, 30);
+  color: white;
 }
